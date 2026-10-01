@@ -1,13 +1,22 @@
 {
   "schema": 1,
-  "configVersion": "2026.10.01-8",
+  "configVersion": "2026.10.01-9",
   "runtimeVersion": "1.6.0-exp1",
+  "revision": 9,
   "enabled": true,
+  "updater": {
+    "autoCheck": true,
+    "intervalMinutes": 30,
+    "timeoutSeconds": 12,
+    "allowDowngrade": false,
+    "keepLastGood": true
+  },
   "diagnostics": {
     "showPrompt": false,
     "updateButtonTitle": "Aktualisieren",
     "versionDisplay": "runtime"
   },
+  "remoteDefaults": {},
   "uiRules": {
     "hiddenTexts": []
   },
