@@ -1,8 +1,16 @@
 {
   "schema": 1,
-  "configVersion": "2026.10.01-7",
-  "runtimeVersion": "1.5.1-exp1",
+  "configVersion": "2026.10.01-8",
+  "runtimeVersion": "1.6.0-exp1",
   "enabled": true,
+  "diagnostics": {
+    "showPrompt": false,
+    "updateButtonTitle": "Aktualisieren",
+    "versionDisplay": "runtime"
+  },
+  "uiRules": {
+    "hiddenTexts": []
+  },
   "uiFilters": {
     "sponsoredSearchCards": {
       "enabled": true,
