@@ -1,12 +1,12 @@
 {
   "schema": 1,
-  "configVersion": "2026.10.01-5",
-  "runtimeVersion": "1.5.0-r1",
+  "configVersion": "2026.10.01-6",
+  "runtimeVersion": "1.5.1-r1",
   "enabled": true,
   "uiFilters": {
     "sponsoredSearchCards": {
       "enabled": true,
-      "rulesVersion": "3",
+      "rulesVersion": "4",
       "labels": ["Gesponsert", "Sponsored", "Anzeige", "Ad"],
       "containerClassCandidates": [],
       "scanDepth": 20,
@@ -15,7 +15,7 @@
       "minContainerWidth": 250,
       "minContainerHeight": 70,
       "maxContainerHeight": 1100,
-      "hideStrategy": "hidden"
+      "hideStrategy": "collapse"
     }
   },
   "versions": {
