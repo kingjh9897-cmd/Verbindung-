@@ -1,42 +1,39 @@
 {
   "schema": 1,
-  "configVersion": "2026.10.01-2",
+  "configVersion": "2026.10.01-3",
   "enabled": true,
+  "uiFilters": {
+    "sponsoredSearchCards": {
+      "enabled": true,
+      "rulesVersion": "1",
+      "labels": ["Gesponsert", "Sponsored", "Anzeige", "Ad"],
+      "containerClassCandidates": [],
+      "scanDepth": 14,
+      "textSearchDepth": 12,
+      "maxAncestorDepth": 16,
+      "minContainerWidth": 250,
+      "minContainerHeight": 70,
+      "maxContainerHeight": 900,
+      "hideStrategy": "hidden"
+    }
+  },
   "versions": {
     "21.38.2": {
       "enabled": true,
       "classCandidates": ["YTIPlayerResponse"],
       "hooks": {
-        "playerAdsArray": {
-          "enabled": true,
-          "selectors": ["playerAdsArray"]
-        },
-        "adSlotsArray": {
-          "enabled": true,
-          "selectors": ["adSlotsArray"]
-        },
-        "adPlacementsArray": {
-          "enabled": true,
-          "selectors": ["adPlacementsArray"]
-        }
+        "playerAdsArray": {"enabled": true, "selectors": ["playerAdsArray"]},
+        "adSlotsArray": {"enabled": true, "selectors": ["adSlotsArray"]},
+        "adPlacementsArray": {"enabled": true, "selectors": ["adPlacementsArray"]}
       }
     },
     "21.39.4": {
       "enabled": true,
       "classCandidates": ["YTIPlayerResponse"],
       "hooks": {
-        "playerAdsArray": {
-          "enabled": true,
-          "selectors": ["playerAdsArray"]
-        },
-        "adSlotsArray": {
-          "enabled": true,
-          "selectors": ["adSlotsArray"]
-        },
-        "adPlacementsArray": {
-          "enabled": true,
-          "selectors": ["adPlacementsArray"]
-        }
+        "playerAdsArray": {"enabled": true, "selectors": ["playerAdsArray"]},
+        "adSlotsArray": {"enabled": true, "selectors": ["adSlotsArray"]},
+        "adPlacementsArray": {"enabled": true, "selectors": ["adPlacementsArray"]}
       }
     }
   }
