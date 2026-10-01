@@ -1,19 +1,19 @@
 {
   "schema": 1,
-  "configVersion": "2026.10.01-3",
+  "configVersion": "2026.10.01-4",
   "enabled": true,
   "uiFilters": {
     "sponsoredSearchCards": {
       "enabled": true,
-      "rulesVersion": "1",
+      "rulesVersion": "2",
       "labels": ["Gesponsert", "Sponsored", "Anzeige", "Ad"],
       "containerClassCandidates": [],
-      "scanDepth": 14,
-      "textSearchDepth": 12,
-      "maxAncestorDepth": 16,
-      "minContainerWidth": 250,
-      "minContainerHeight": 70,
-      "maxContainerHeight": 900,
+      "scanDepth": 20,
+      "textSearchDepth": 14,
+      "maxAncestorDepth": 20,
+      "minContainerWidth": 220,
+      "minContainerHeight": 60,
+      "maxContainerHeight": 1100,
       "hideStrategy": "hidden"
     }
   },
