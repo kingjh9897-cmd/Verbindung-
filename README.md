@@ -1,15 +1,18 @@
-# Verbindung-
+# YouTubeJH Verbindung
 
-Remote-Konfiguration für YouTubeJH.
+Dieses Repository liefert signierte Remote-Konfigurationen für YouTubeJH.
 
-## Update-System v4
+## Update-Sicherheit V4.1
 
-- `manifest.json` ist ein signiertes, atomares Envelope und zeigt auf unveränderliche Runtime-Revisionen.
-- `runtime/stable/rev-*.json` enthält getestete Stable-Runtimes.
-- `runtime/beta/rev-*.json` enthält Beta-Runtimes.
-- Jede Runtime ist selbst signiert; zusätzlich prüft der Loader die SHA-256-Prüfsumme aus dem Manifest.
-- Der Loader behält die letzte funktionierende Runtime und kann bei wiederholten instabilen Starts automatisch zurückrollen.
-- `minLoaderVersion` verhindert inkompatible Runtime-Updates.
-- Vertrauenswürdige zusätzliche Public Keys können über ein bereits gültig signiertes Manifest eingeführt werden.
+- `manifest.json` wird vom eingebetteten Root-Key `root-2026` signiert.
+- Das Manifest autorisiert getrennte Runtime-Schlüssel über `trustedKeys`.
+- `update-main-2026` ist der bevorzugte Runtime-Schlüssel.
+- `update-emergency-2026` ist der vorbereitete Notfall-/Fallback-Schlüssel.
+- `keysetRevision` verhindert ein Zurückrollen auf eine ältere Schlüsselliste.
+- `disabledKeyIds` kann kompromittierte Runtime-Schlüssel dauerhaft sperren.
+- `validFrom` / `validUntil` begrenzen die Gültigkeit jedes Schlüssels.
+- Runtime-Envelopes tragen `keyId`, damit der Loader direkt den richtigen Schlüssel prüft.
+- SHA-256-Fingerprints und Prüfzeit werden vom Loader für die Diagnose gespeichert.
+- Stable und Beta liegen als unveränderliche Revisionen unter `runtime/stable/` und `runtime/beta/`.
 
-Die alten `runtime.json`, `runtime.sig.hex`, `config.json` und `config.sig` bleiben vorerst nur für ältere Loader erhalten.
+Private Schlüssel gehören niemals in dieses Repository.
