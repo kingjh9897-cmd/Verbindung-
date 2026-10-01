@@ -1,0 +1,25 @@
+{
+  "schema": 1,
+  "configVersion": "2026.10.01-1",
+  "enabled": true,
+  "versions": {
+    "21.38.2": {
+      "enabled": true,
+      "classCandidates": ["YTIPlayerResponse"],
+      "hooks": {
+        "playerAdsArray": {"enabled": true, "selectors": ["playerAdsArray"]},
+        "adSlotsArray": {"enabled": true, "selectors": ["adSlotsArray"]},
+        "adPlacementsArray": {"enabled": true, "selectors": ["adPlacementsArray"]}
+      }
+    },
+    "21.39.4": {
+      "enabled": true,
+      "classCandidates": ["YTIPlayerResponse"],
+      "hooks": {
+        "playerAdsArray": {"enabled": true, "selectors": ["playerAdsArray"]},
+        "adSlotsArray": {"enabled": true, "selectors": ["adSlotsArray"]},
+        "adPlacementsArray": {"enabled": true, "selectors": ["adPlacementsArray"]}
+      }
+    }
+  }
+}
