@@ -5,3 +5,7 @@ The signed stable rule package is named 1.8.2-exp6 and points to immutable runti
 Extended sponsored diagnostics are native functionality in YouTube-JH 1.8.2-exp6. Install that experimental dylib once to use per-hook status/call counts, read-only visible card probes, possible gap hints and resettable test reports. A remote rule version does not replace the installed dylib.
 
 Existing loader compatibility is retained. Legacy visual hiding remains disabled; model filtering and player-ad hooks remain enabled. Open Diagnose, tap Aktualisieren, then Gesponsert-Test neu beginnen, reproduce the search, and Diagnose kopieren. Historical revisions remain available.
+
+## Revision 23: corrected update notice
+
+Revision 23 clarifies that users who already installed the native 1.8.2-exp6 dylib through ESign do not need to reinstall it. The notice is general release text, not a device installation check. Filter configuration and native version remain unchanged. Manifest and runtime signatures, decoded-payload checksum and version/key agreement were verified.
